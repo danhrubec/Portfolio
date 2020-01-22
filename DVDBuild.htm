@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daniel Hrubec Portfolio</title>
+    <link href="webStyle.css" rel="stylesheet" type="text/css">
+    <script src="function.js"></script>
+    <script src="https://kit.fontawesome.com/adf4a0f504.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<div id="sidebar">
+        <div class="toggle-button" onclick="toggleSideBar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="#" onclick="toggleSideBar()">Close</a></li>
+            <li><a href="https://danhrubec.github.io/Portfolio/">Home</a></li>
+            <li><a href="index.htm#summary">About</a></li>
+            <li><a href="index.htm#portfolio">Portfolio</a></li>
+            <li><a href="index.htm#contact">Contact</a></li>
+        </ul>
+    </div>
+    <nav id="Top-Menu">
+     <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="mailto:hrubecdan@gmail.com">E-Mail</a></li>
+        <li><a href="index.htm#summary">Summary</a></li>
+        <li><a href="resources/Dan%20Hrubec%20-%20Resume.pdf">Resume</a></li>
+        <li><a href="index.htm#contact">Contact</a></li>
+    
+    </ul>
+    </nav>
+    
+    
+    <section id="DVDBuild">
+        <div id="DVDTitle">
+            <h1>DVD PC Build</h1>
+            <h2>Reusing old technology</h2>
+        </div>
+        <div id="DVDBody">
+            <p> This idea was initially inspired by <a href="https://avgn.fandom.com/wiki/Nintoaster"> AVGN's Nintoaster</a>, where a friend of his made a custom built NES. The NES was taken apart and rebuilt inside of
+            a toaster so when he would go an load up a game, it was as if he was using a toaster. I was fascinated by the use of old technology encasing something completely different. So my take on the subject would be 
+            take to some old PC parts lying around and to rebuild a computer within a DVD player. So when you would go and turn it on, it would look as if you were using a DVD player but it would be powering up a computer. So 
+            I worked on an rough outline on how the process would go, to see if I can predict any potential issues I would encounter during this project.</p>
+            <h1 class="center-text"> The Prototype</h1>
+            <p> As how most projects should start, it should start a lower scale as a proof of concept to see if it is even feasible doing. So I went over to a local Goodwill and picked up an old DVD player which would act as the
+            case to my build. I wanted to purposefully pick a clunky one to make it look as old as possible.</p>
+            <img src="images/DSC_0829.JPG" alt="Front of DVD Player">
+            <img src="images/DSC_0830.JPG" alt="Back of DVD Player">
+            <p> So the first step would be to explore the amount of space that this new casing would provide. So I ripped apart all of the contents within the case and recycled them parts properly. Then inside would just be an empty
+            casing. Looking at it, the main issue would be I would need enough space to fit all the necessary parts inside. The parts have to fit wide and not tall. I couldn't have a huge CPU cooler as it would be too high to put back the 
+            top of the case. All the cords will have to reach the proper spots within the mother board. I would have to a cut a hole in the back for the motherboard. I would need to make sure there was enough ventilation so the PC doesn't overheat. There was a lot to consider and so the best way in my mind was to try it and fail a bunch of times until I can get it working.</p>
+            <img src="images/DSC_0831.JPG" alt="Empty DVD player">
+            <img src="images/DSC_0832.JPG" alt="Empty DVD player">
+            <h1 class="center-text">Donor PC</h1>
+            <p>As stated, this was only meant to be a prototype. I went to a local used hardware store that buys and sells spare parts. They had some fully built PCs and I needed to find just a really cheap one that was a smaller build. This way I'm not investing so much into the idea as well as this will allow me to try and preserve as much space as possible. So like the DVD player, had to take apart this PC, but I needed to keep all the parts together instead of recycling them. </p>
+            <img src="images/DSC_0833.JPG" alt="Donor PC">
+            <img src="images/DSC_0839.JPG" alt="Parts apart">
+            <p>So the next part would be finding a combination of laying out the parts so that it would fit properly. Once I found a suitable layout, I had to make a platform for the motherboard, cut holes into the back of the DVD player so that it would have space for the power supply, and the motherboard to fit into the back. I didn't really care much for the cleanliness of the cut, I just wanted to make it work for the time being. Luckily, I was able to use the IO shield of the old PC so I would just have to cut out a big rectangle in the back rather than trying to make super precise cuts to for all of the ports in the motherboard. After that we needed to route the power switch so the power button of the DVD player would turn on the PC. After all of that I can put the case back together and see if everything was working.</p>
+            <h1 class="center-text">Finished product</h1>
+            <p>Also needed to cut some additional holes in the back and the front to allow for some proper air flow. Used an external USB fan to help with this so that there was flow from the front of the DVD player to the back so a lot of the temperature can dissipate properly. When I was taking apart the DVD player, the actual part the reads the DVD took a big portion of the front and allowed for some airflow in. This bothered me at first, but then I used it for the fan to allow for airflow.</p>
+            <img src="images/DSC_0844.JPG" alt="Built">
+            <img src="images/DSC_0850.JPG" alt="Back">
+            <p>Reaching the end, it was time to cross my fingers to see if I can get the PC to post and give me the opportunity to decorate it a little bit. Sure enough it works.</p>
+            <img src="images/DSC_0861.JPG" alt="Done">
+            <img src="images/DSC_0862.JPG" alt="Done">
+            <p>After it was able to post, I use it from time to time now as a kind of test machine when I want to explore certain software and IT capabilities. I was able to re-image the machine and put a standard windows 10 image on it. That's pretty much it. I was fairly pleased with the outcome of the prototype. I have since put this project down for the time being. I will revisit this as there are a lot of ways to improve the machine. But the proof of concept showed that this idea is possible. If I were to revisit it, I would buy my own powerful parts to make it a usable machine for day to day purposes.</p>
+            <p>DBH</p>
+        
+        
+        </div>
+    
+    
+    
+    </section>
+</body>
+</html>

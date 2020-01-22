@@ -1,0 +1,370 @@
+
+html, body {
+	
+	height: 95%;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position: center;
+    scroll-behavior: smooth;
+    background-size:cover;
+    min-width: 500px;
+    max-width: auto;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Back to Top button*/
+.to-top
+{
+    background: rgb(222,222,222);
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color: black;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s
+}
+
+.to-top.active 
+{
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}
+/*Side bar*/
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    right:-200px;
+    transition: all 250ms linear;
+    
+    
+}
+
+#sidebar:hover{
+    cursor:pointer;
+}
+
+#sidebar.active {
+    right: 0px;
+   
+}
+
+#sidebar ul li{
+    color: rbga(230,230,230, 0.9);
+    list-style:none;
+    padding: 15px 10px;
+    text-decoration:none;
+    
+    font-family: 'Ropa Sans', sans-serif;
+    border-bottom: 1px solid rgba(100,100,100,0.3);
+    
+}
+
+#sidebar ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Ropa Sans', sans-serif;
+    color:white;
+    padding: 0 20px;
+}
+
+#sidebar .toggle-button
+{
+    position: absolute;
+    right: 230px;
+    top: 20px;
+     
+}
+
+#sidebar .toggle-button span
+{
+    display:block;
+    width: 30px;
+    height: 5px;
+    background: #151719;
+    margin: 5px 0px;
+}
+
+/*Top menu*/
+
+#Top-Menu
+{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0,75,165)
+    
+}
+
+#Top-Menu ul{
+    display:table;
+    margin:0 auto;
+   
+}
+
+#Top-Menu ul li{
+    list-style:none;
+    display: inline-block;
+    float: left;
+    line-height: 80px;
+}
+
+#Top-Menu ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Ropa Sans', sans-serif;
+    color:#1e1e1e;
+    padding: 0 20px;
+}
+
+#Top-Menu ul li a:hover{
+   text-decoration: underline;
+    color: rgb(200,200,200);
+}
+
+/*page header*/
+.page-header h1{
+    padding-top: 7%;
+    font-size: 80px;
+    font-family: 'Source Serif Pro', serif;
+    
+    text-align: center;
+    text-shadow:
+                 0px 0px 2px #fff,
+                -2px -2px 2px #fff,
+                 2px -2px 2px #fff,
+                -2px 2px 2px #fff,
+                 2px 2px 2px #fff;
+}
+.page-header h2{
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Source Serif Pro', serif;
+    text-align: center;
+    text-shadow:
+                 0px 0px 2px #fff,
+                -2px -2px 2px #fff,
+                 2px -2px 2px #fff,
+                -2px 2px 2px #fff,
+                 2px 2px 2px #fff;
+}
+
+.wrapper
+{
+    min-height: 100%;
+    min-width: 1024px;
+    
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    
+    top:0;
+    left:0;
+ 
+}
+
+.page-header{
+    background: url(images/skyline2.jpg);
+    height: 102%;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+    min-width: 1000px;
+}
+.center-text{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Source Serif Pro', serif;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.avatar{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    
+    vertical-align:top;
+    display: inline-block;
+    position: absolute;
+    
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+   
+    background-size: cover;
+}
+
+#aboutme-text
+{
+    margin-top:40px;
+    margin-left: 450px;
+    margin-right: 200px;
+    margin-bottom: 300px;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size:20px;
+}
+
+/* Portfolio controls */
+#Portfolio{
+    background: url(images/cboard.jpg);
+    color: black; 
+    font-size: 16px;
+                
+    text-shadow:
+                 0px 0px 2px #fff,
+                -2px -2px 2px #fff,
+                 2px -2px 2px #fff,
+                -2px 2px 2px #fff,
+                 2px 2px 2px #fff;
+    
+}
+#Portfolio a{
+    text-decoration:none;
+    text-decoration-color: black;
+    color:black;
+}
+
+.port-img{
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    position:absolute;
+    display:flex;
+    border: 10px solid;
+    
+    
+    width: 300px;
+    height: 200px;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#Portfolio p {
+    margin-top:60px;
+    margin-left: 450px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+    display:inline-block;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size:20px;
+    
+}
+
+
+/* Contact me Controls */
+#Contact-me ul{
+    display:table;
+    margin:0 auto;
+    
+    
+}
+#Contact-me ul li{
+    text-align: center;
+    display:flex;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-family: 'Ropa Sans', sans-serif;
+    color:black;
+    text-decoration-color: black;
+    font-size:25px;
+}
+
+#Contact-me a{
+    color:black;
+    
+}
+
+#centered{
+ 
+    align-content: center;
+    margin-left: 50px;
+
+}
+
+.small-line{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:20px;
+ 
+}
+
+.footer-h1{
+    text-align:center;
+    font-size: 15px;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+
+/* DVD Build Control */
+#DVDTitle
+{
+    text-align:center;
+    font-size:50px;
+    font-family: 'Source Serif Pro', serif;
+    background-color: dimgray;
+    height:600px;
+    width: auto;
+}
+
+
+#DVDTitle h1
+{
+    padding-top:7%;
+}
+#DVDTitle h2
+{
+    font-size:30px;
+}
+
+#DVDBody a
+{
+    text-decoration: underline;
+    color:rgb(150,150,150); 
+    
+}
+
+#DVDBody a:hover
+{
+    text-decoration: underline;
+    text-decoration-color:rgb(80,80,80); 
+    
+}
+
+
+#DVDBody p{
+    margin-top:50px;
+    margin-left:250px;
+    margin-right:250px;
+    font-size: 28px;
+    line-height: 140%;
+    font-family: 'Ropa Sans', sans-serif;
+    color: rgb(150,150,150);
+    text-decoration-color: rgb(150,150,150);
+}
+
+#DVDBody img{
+    align-items:center;
+    display:flex;
+    margin-top:25px;
+    margin-left:auto;
+    margin-right:auto;
+    width:600px;
+    height:400px;
+}
